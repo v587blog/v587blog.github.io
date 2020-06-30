@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+    
+    
+<link rel="stylesheet" href="/css/mdui.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            面试总结 | Hexo
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Hexo</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-2">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/tools/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">工具箱</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-2">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">John Doe</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:xxx@xxx.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a href="https://garybear.cn/hexo-theme-meadow/" target="_blank" rel="noopener" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/">面试总结</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2020-06-30
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2020-06-30
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=面试总结&url=http://yoursite.com/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/&pic=http://yoursite.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=面试总结&url=http://yoursite.com/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/&via=John Doe" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://yoursite.com/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/&title=面试总结" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=面试总结&summary=&pics=http://yoursite.com/null&url=http://yoursite.com/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://yoursite.com/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/&text=面试总结" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><p>Mysql <a href="https://juejin.im/post/5e94535f51882573a03394ed" target="_blank" rel="noopener">https://juejin.im/post/5e94535f51882573a03394ed</a></p>
+<p>数据库索引 不用二叉树原因是因为 二叉树可能会变为O(n)</p>
+<p>数据库如何加快 查询 ：cache 索引 ，分表分库，</p>
+<p>mysql B+ B区别</p>
+<p>mysql 隔离级别 -&gt; MVCC如何保证的 -&gt; 间隙锁怎么使用的</p>
+<p>mysql hash索引？</p>
+<p>MVCC 在读方面有什么用途</p>
+<p>mysql 索引 orderby 之后的字段要不要加进去 -&gt; 以及 mysql orderby如何实现</p>
+<p>可重复读有用到锁</p>
+<p>那如何设计可以动态扩容缩容的分库分表方案？</p>
+<h2 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h2><p><a href="https://juejin.im/post/5e9421836fb9a03c7b3051bb" target="_blank" rel="noopener">https://juejin.im/post/5e9421836fb9a03c7b3051bb</a></p>
+<h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><p>多线程 <a href="https://mp.weixin.qq.com/s/fGU-WMyX8J-gNYoOkznzdA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/fGU-WMyX8J-gNYoOkznzdA</a></p>
+<p>为什么要使用多线程？</p>
+<p>并发编程适用于什么场景？</p>
+<p>CPU 密集型程序创建多少个线程合适？</p>
+<p>I/O密集型程序创建多少个线程合适？</p>
+<p>Java锁 synchronized volatile</p>
+<p>线程池 堵塞队列为什么要用堵塞的</p>
+<p>volicate -&gt;内存重排序到底怎么避免的……</p>
+<p>volitale 怎么搞</p>
+<p>Future的缺陷 CompletionService 在依赖任务之间是如何实现的</p>
+<p>Java内存模型</p>
+<p>ReentractLock</p>
+<p>ReentractLock与synchronized之间的区别</p>
+<p>HashMap 1.7和1.8之间的区别</p>
+<p>线程池执行的时候怎样在服务停止的时候优雅关闭线程池</p>
+<blockquote>
+<p>假设要求一个系统的 TPS（Transaction Per Second 或者 Task Per Second）至少为20，然后假设每个Transaction由一个线程完成，继续假设平均每个线程处理一个Transaction的时间为4s</p>
+</blockquote>
+<p>如何设计线程个数，使得可以在1s内处理完20个Transaction？</p>
+<p>计算操作需要5ms，DB操作需要 100ms，对于一台 8个CPU的服务器，怎么设置线程数呢？</p>
+<p>增加 CPU 核数一定能解决问题吗？</p>
+<p>我们已经知道创建多少个线程合适了，为什么还要搞一个线程池出来？</p>
+<p>创建一个线程都要做哪些事情？为什么说频繁的创建线程开销很大？</p>
+<p>多线程通常要注意共享变量问题，为什么局部变量就没有线程安全问题呢？</p>
+<p><a href="https://juejin.im/post/5e9427c551882573cc56ba8e" target="_blank" rel="noopener">https://juejin.im/post/5e9427c551882573cc56ba8e</a></p>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p>面试助力，算法小册 <a href="https://101.zoo.team/" target="_blank" rel="noopener">https://101.zoo.team/</a></p>
+<p>力扣 <a href="https://leetcode-cn.com/" target="_blank" rel="noopener">https://leetcode-cn.com/</a></p>
+<p>小浩算法：<a href="https://www.geekxh.com/0.0.学习须知/01.html" target="_blank" rel="noopener">https://www.geekxh.com/0.0.%E5%AD%A6%E4%B9%A0%E9%A1%BB%E7%9F%A5/01.html</a></p>
+<p>快排如何变为稳定的</p>
+<p>算法coding，反转链表</p>
+<p>算法：带父节点的二叉树 中序遍历查找的上一个节点？</p>
+<p>跳表 和平衡树区别</p>
+<p>平衡树的种类</p>
+<p>计算题：扑克牌两张王的概率</p>
+<p>手写代码：合并N个链表 -&gt; 优化为 log(n) -&gt; null 判断 -&gt; 不允许修改数据结构怎么实现</p>
+<p>算法题一</p>
+<blockquote>
+<p>判断一个IP是否在国内。<br>输入：<br>数据库中有几十万的国内IP段 (start_ip, end_ip)<br>一个待验证的IP<br>输出：<br>YES or NO</p>
+</blockquote>
+<p>算法题二</p>
+<blockquote>
+<p>用户在线波峰计算。<br>输入： 用户日志(time, user_id, login | logout)<br>输出：同时在线人数的峰值， 峰段(峰值的90%) eg (19:50到22:10， 峰值3亿，最低2.7亿)</p>
+</blockquote>
+<p>滑动窗口 -&gt; 客户端和服务器端分别有哪些区域(已确认 传输未确认 未传输)</p>
+<p>算法稳定性的实际作用</p>
+<p>算法：第 K大的元素</p>
+<ul>
+<li>算法1：第一个从n个数字的数组中等概率的取出m个数字</li>
+<li>算法2：后缀树找最长重复的字符串</li>
+<li>算法3：反转最后K个节点</li>
+</ul>
+<p>3点15时针分针的角度是多少</p>
+<p>手写一个队列</p>
+<p>面试官让我手写一个队列，我觉得是一个比较简单的面试题，就口述了下思路，然后面试官坚持问了我第二遍，要不要手写出来，我说还是不要了</p>
+<h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><p>工厂模式 场景</p>
+<p>策略模式 如何解藕 -&gt; 项目中如何使用的</p>
+<p>策略模式 不同策略怎么转化的</p>
+<p>写一下观察者模式代码</p>
+<p><a href="https://juejin.im/post/5e94240cf265da47a74130e0" target="_blank" rel="noopener">https://juejin.im/post/5e94240cf265da47a74130e0</a></p>
+<h2 id="实际业务设计"><a href="#实际业务设计" class="headerlink" title="实际业务设计"></a>实际业务设计</h2><p>排行榜如何实现</p>
+<p>如何查排行榜第2000个人的信息</p>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><p>java游戏服务器 如何通信</p>
+<p>网络粘包</p>
+<p>网络两次握手不可以？</p>
+<p>http 握手的 wait time</p>
+<p>访问一个 url 发生了什么</p>
+<p>dns 是什么 原理</p>
+<p>HTTPS 和HTTP区别是什么？ HTTPS 客户端服务器怎么交互的？</p>
+<p>http 协议是什么 POST请求字段</p>
+<p><a href="https://juejin.im/post/5e9412d951882573c04cd9c1" target="_blank" rel="noopener">https://juejin.im/post/5e9412d951882573c04cd9c1</a></p>
+<h2 id="MQ"><a href="#MQ" class="headerlink" title="MQ"></a>MQ</h2><p>Kafka水位(high watermark)</p>
+<p>MQ怎样做到消息的可靠性</p>
+<p>如果让你来开发一个消息队列中间件，你会怎么设计架构？</p>
+<p>我该如何保证从消息队列里拿到的数据按顺序执行？</p>
+<p>我的天，我为什么在消息队列列消费到了重复的数据？</p>
+<p>小小小海文rocketmq <a href="https://mp.weixin.qq.com/s/Z81srQyPQJufvardyl4sXQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/Z81srQyPQJufvardyl4sXQ</a></p>
+<p>小小小海文 kafka <a href="https://mp.weixin.qq.com/s/19DNAyfnIHMJcyaop8sBHA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/19DNAyfnIHMJcyaop8sBHA</a></p>
+<p>小小小海文 rabbitmq <a href="https://mp.weixin.qq.com/s/U0ifnMT7rLFVAAiTZnpuYQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/U0ifnMT7rLFVAAiTZnpuYQ</a></p>
+<p>kafka面试题 <a href="https://juejin.im/post/5dff1de26fb9a01636235380" target="_blank" rel="noopener">https://juejin.im/post/5dff1de26fb9a01636235380</a></p>
+<p>rabbitmq 面试题 <a href="https://juejin.im/post/5dfc93a5f265da339b500273" target="_blank" rel="noopener">https://juejin.im/post/5dfc93a5f265da339b500273</a></p>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><p>操作系统预读</p>
+<p>操作系统两个进程写共享内存中一个位置 会不会出现不一致（和分页分段有关）</p>
+<h2 id="jvm"><a href="#jvm" class="headerlink" title="jvm"></a>jvm</h2><p>一个线程在内存中如何存储</p>
+<p>jvm参数 为什么要配置-&gt; 8G内存的机器 java进程最大配置多少</p>
+<p>java内存结构</p>
+<p>对象创建过程</p>
+<p>类加载器 -&gt; 双亲委派-&gt; ClassLoad find load的区别(和面向对象有关系)-&gt; JDBC 加载机制 -&gt; 面向对象的原则</p>
+<p>怎样写一个程序，快速打满方法区</p>
+<p>让你设计一下可达性分析，思路大概是什么</p>
+<p>双亲委任机制和SPI</p>
+<p>JVM <a href="https://www.cnblogs.com/skyme/p/13212296.html?utm_source=gold_browser_extension" target="_blank" rel="noopener">https://www.cnblogs.com/skyme/p/13212296.html?utm_source=gold_browser_extension</a></p>
+<p>JMM <a href="https://juejin.im/post/5d4b9a39f265da03bb4a9451" target="_blank" rel="noopener">https://juejin.im/post/5d4b9a39f265da03bb4a9451</a></p>
+<h2 id="团队"><a href="#团队" class="headerlink" title="团队"></a>团队</h2><p>实习的工作？有什么感觉有难度的地方？和团队其他人怎么协调的？</p>
+<h2 id="个人"><a href="#个人" class="headerlink" title="个人"></a>个人</h2><p>实习之后有哪些成长？</p>
+<p>有没有博客？开源项目？</p>
+<p>最近在看什么书？</p>
+<p>常用的语言？python和java比较</p>
+<p>平时怎么学习的?</p>
+<h2 id="个人职业规划"><a href="#个人职业规划" class="headerlink" title="个人职业规划"></a>个人职业规划</h2><p>领导约谈人生，职业规划、打算之类的。</p>
+<h2 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h2><p>项目：介绍 难点 实现细节</p>
+<blockquote>
+<p>项目中你做了什么，项目细节、你的成长</p>
+</blockquote>
+<blockquote>
+<p>业务可以改进的点？</p>
+</blockquote>
+<blockquote>
+<p>项目的平行对比……我们组的项目和平行项目（hadoop spark）相比 优势？</p>
+</blockquote>
+<blockquote>
+<p>在上家公司做的订单模块，正向下单流程业务是怎样的，系统流转怎样的，涉及到哪些域。</p>
+</blockquote>
+<p>下单流程根据不同的业务涉及到的流转都不一样，一般涉及到库存，订单，营销。订单完成之后涉及到调度域，积分域，用户等等。</p>
+<blockquote>
+<p>具体的订单模型是怎样设计的，拆单的依据是什么？</p>
+</blockquote>
+<p>我把订单的模型说了一下，一般都是订单主表和订单条目表，根据供应商的维度进行拆分订单。</p>
+<blockquote>
+<p>正向下单流程中，优惠劵，库存，订单三者的事务如何保证的？</p>
+</blockquote>
+<p>我们做的很low，没有用分布式事务，直接在订单这边catch，catch里面做一些异常反向流程，比如说释放存储，更改优惠券状态等。</p>
+<blockquote>
+<p>问这样做的问题在哪里？</p>
+</blockquote>
+<p>问题肯定非常明显了，就是catch中失败如何去做。当时我们只是记录了相关接口调用日志，会有1min的job会去轮询这些状态记录，并告警通知的。我们也考虑过调研过一些分布式事务框架，目前也在调研中。</p>
+<blockquote>
+<p>现在公司用户中心怎么设计的？为什么这么设计？</p>
+</blockquote>
+<blockquote>
+<p>下单的链路怎么样的？</p>
+</blockquote>
+<blockquote>
+<p>怎么解决正向下单流程中库存，订单，积分的分布式事务问题？履约的过程？履约的后续流程？</p>
+</blockquote>
+<blockquote>
+<p>交易相关的一些设计思路</p>
+</blockquote>
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><p>平时架构设计中要画哪些图？</p>
+<p>画出系统架构图（感觉每个面试官都会问）</p>
+<p>我说一般会画一些数据库ER模型，重要的流程时序图，逻辑架构图，物理架构图等等</p>
+<p>聊聊DDD的理解</p>
+<p>分库分表怎么做的</p>
+<p>一个关键的问题，分库分表之后全局的id咋生成？</p>
+<p>说说你们的分布式session方案是啥？怎么做的？</p>
+<p>如何设计高可用系统架构？</p>
+<p>限流是什么,如何限流？</p>
+<p>熔断是什么，如何熔断？</p>
+<p>降级是什么，如何降级？</p>
+<p>如何不停机迁移到分库分表的？</p>
+<p>引入消息队列后，该如何保证其高可用性？</p>
+<p>分布式系统中接口调用如何保证顺序性？</p>
+<p>你们公司生产环境的redis集群的部署架构是什么？</p>
+<p>分布式系统接口的幂等性该如何保证？比如不能重复扣款</p>
+<p>说说MySql读写分离的原理？</p>
+<p>主从延时咋解决？</p>
+<p>你们生产环境的分布式搜素引擎是怎么部署的呢？</p>
+<p>如何进行消息队列的技术选型？</p>
+<p>了解分布式事务方案吗？咋做的？有啥坑？</p>
+<p>几百万消息在消息队列里积压了几个小时？</p>
+<p>redis有哪些数据类型？分别在哪些场景下使用比较合适呢？</p>
+<p>怎么保证redis挂掉之后再重启数据可以进行恢复？</p>
+<p>分布式锁是啥？对比下redis和zk两种分布式锁的优劣？</p>
+<p>怎么保证redis是高并发以及高可用？</p>
+<p>分布式搜素引擎写入和查询的工作流程是什么样的？</p>
+<p>hashmap源码分析和实现</p>
+<p>Mysql主从</p>
+<p>CAP&amp;BASE <a href="https://my.oschina.net/foodon/blog/372703" target="_blank" rel="noopener">https://my.oschina.net/foodon/blog/372703</a></p>
+<p>幂等：</p>
+<p><a href="https://juejin.im/post/5d31928c51882564c966a71c" target="_blank" rel="noopener">https://juejin.im/post/5d31928c51882564c966a71c</a></p>
+<p><a href="https://juejin.im/post/5c05f233e51d4524860fc51a" target="_blank" rel="noopener">https://juejin.im/post/5c05f233e51d4524860fc51a</a></p>
+<p>数据一致性：</p>
+<p><a href="https://www.upyun.com/opentalk/310.html" target="_blank" rel="noopener">https://www.upyun.com/opentalk/310.html</a></p>
+<p>高并发海量数据：</p>
+<p><a href="https://juejin.im/search?query=mq面试题&type=all" target="_blank" rel="noopener">https://juejin.im/search?query=mq%E9%9D%A2%E8%AF%95%E9%A2%98&amp;type=all</a></p>
+<h2 id="spring"><a href="#spring" class="headerlink" title="spring"></a>spring</h2><p>Spring AOP如何实现的 -&gt; 你项目中如何捕获aop异常 以及记录日志的</p>
+<p>spring <a href="https://juejin.im/post/5e948c46e51d4546f46f47f9" target="_blank" rel="noopener">https://juejin.im/post/5e948c46e51d4546f46f47f9</a></p>
+<h2 id="springmvc"><a href="#springmvc" class="headerlink" title="springmvc"></a>springmvc</h2><p>springmvc <a href="https://juejin.im/post/5e948cecf265da47df1cd139" target="_blank" rel="noopener">https://juejin.im/post/5e948cecf265da47df1cd139</a></p>
+<h2 id="springboot"><a href="#springboot" class="headerlink" title="springboot"></a>springboot</h2><p><a href="https://juejin.im/post/5e9422a3e51d4579180959ba" target="_blank" rel="noopener">https://juejin.im/post/5e9422a3e51d4579180959ba</a></p>
+<h2 id="springcloud"><a href="#springcloud" class="headerlink" title="springcloud"></a>springcloud</h2><p><a href="https://juejin.im/post/5e94233bf265da47c5584b3b" target="_blank" rel="noopener">https://juejin.im/post/5e94233bf265da47c5584b3b</a></p>
+<h2 id="dubbo"><a href="#dubbo" class="headerlink" title="dubbo"></a>dubbo</h2><p><a href="https://juejin.im/post/5e9591dee51d4546cf7785ca" target="_blank" rel="noopener">https://juejin.im/post/5e9591dee51d4546cf7785ca</a></p>
+<h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><p>微服务注册中心原理</p>
+<p>zookeeper如何体现AP</p>
+<p>注册服务怎么判断上线下线</p>
+<p>如果一个服务版本升级了 其他服务没升级怎么办</p>
+<p>为什么要使用spring cloud</p>
+<p>eureka源码 Hystrix源码</p>
+<p>分布式锁实现方式？</p>
+<p>zk的原理 源码</p>
+<p>Spring cloud/jdk设计模式 项目中的设计模式</p>
+<p>http 请求 api 超时如何实现的(定时器有关)</p>
+<p>sentinel和hystrix的区别？</p>
+<p>熔断降级有没有做过？</p>
+<p>限流的一些参数怎么设置，依据是什么？</p>
+<p>设计一个高并发系统，从哪些方面考虑。</p>
+<p>问了对共享业务（大中台）的理解，服务边界怎么划分的，微服务的治理一般包括哪些，监控一般监控哪些等等</p>
+<p>基于dubbo如何做服务治理、服务降级以及重试？</p>
+<p>为什么要把系统拆分成分布式的？为啥要用dubbo？</p>
+<h2 id="ES"><a href="#ES" class="headerlink" title="ES"></a>ES</h2><p>哪些中间件了解的特别深入，我说es，redis，聊了聊使用场景，怎样同步mysql数据到es的</p>
+<p><a href="https://juejin.im/post/5e0348d8e51d45582512a59f" target="_blank" rel="noopener">https://juejin.im/post/5e0348d8e51d45582512a59f</a></p>
+<p><a href="https://juejin.im/post/5e0463d9f265da33cf1ae4a1" target="_blank" rel="noopener">https://juejin.im/post/5e0463d9f265da33cf1ae4a1</a></p>
+<h2 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h2><p><a href="https://juejin.im/post/5e948de0e51d4546d72d3b6c" target="_blank" rel="noopener">https://juejin.im/post/5e948de0e51d4546d72d3b6c</a></p>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><p>java 枚举类型是否可以继承 (final)？ 注解是否可以继承？</p>
+<p>序列化方式</p>
+<p>java异常 <a href="https://juejin.im/post/5e9591a251882573c2192574" target="_blank" rel="noopener">https://juejin.im/post/5e9591a251882573c2192574</a></p>
+<p>java基础 <a href="https://juejin.im/post/5e948e695188257a6a0bd144" target="_blank" rel="noopener">https://juejin.im/post/5e948e695188257a6a0bd144</a></p>
+<h2 id="tomcat"><a href="#tomcat" class="headerlink" title="tomcat"></a>tomcat</h2><p>Tomcat框架的 selevet</p>
+<h2 id="mybatis"><a href="#mybatis" class="headerlink" title="mybatis"></a>mybatis</h2><p>mybatis <a href="https://juejin.im/post/5e944aaa518825738943bcb0" target="_blank" rel="noopener">https://juejin.im/post/5e944aaa518825738943bcb0</a></p>
+<h2 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h2><p>redis <a href="https://juejin.im/post/5e948da5f265da47bb700721" target="_blank" rel="noopener">https://juejin.im/post/5e948da5f265da47bb700721</a></p>
+<p>redis 持久化</p>
+<p>redis 主从复制</p>
+<p>redis 为什么快-&gt; 系统设计的时候如何优化的</p>
+<p>redis用的什么命令</p>
+<p> redis 集群缓存数据不均衡怎么做?</p>
+<p>计算机领域有一句名言：计算机科学领域的任何问题都可以通过增加一个间接的中间层来解决</p>
+<p>缓存架构:堆内缓存 + redis 缓存（二层缓存架构方案）</p>
+<p>数据一致性怎么做的？</p>
+<p>有没有做过相关压测？</p>
+<p>指标是多少？</p>
+<p>为什么用redis？更新策略是什么？</p>
+<p>redis的一些性能优化</p>
+<p>你能说说redis的并发竞争问题该如何解决吗？</p>
+<p>redis的国企策略能介绍一下吗？要不你再手写一个LRU？</p>
+<p>如何保证缓存与数据库双写时的数据一致性？</p>
+<p>你能说说我们一般如何应对缓存雪崩以及穿透问题吗？</p>
+<h2 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h2><p><a href="https://juejin.im/post/5e941ec4e51d45471263ef32" target="_blank" rel="noopener">https://juejin.im/post/5e941ec4e51d45471263ef32</a></p>
+<h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><p>最了解的中间件是什么，说说你的理解；了解hive吗，等等</p>
+<h2 id="有什么问题想问面试官"><a href="#有什么问题想问面试官" class="headerlink" title="有什么问题想问面试官"></a>有什么问题想问面试官</h2><p>设计商品域的时候走的弯路？</p>
+<p>比如商品快照问题怎么解决的，因为当时我们做这一块的时候，所有涉及到商品域属性变更都会生成快照，造成数据量暴增。</p>
+<p>所以他说他们的一些操作日志表有的表已经有分库分表上万张了。</p>
+<p>详情页的设计，怎么做的缓存设计？（比如从不同的业务纬度拆分key，更新频率拆分key）</p>
+<p>因为我一直想了解一下大公司在库存和价格这块有没有应用缓存这种形式，因为我们之前因为QPS都不算高，价格，库存都是直接实时查询数据的，结合兜底方案来解决。</p>
+<p>所以这二个问题一提，一面面试官觉得我之前有过思考，就让我进入了二面。</p>
+<h2 id="hr"><a href="#hr" class="headerlink" title="hr"></a>hr</h2><p>聊了薪水，加班，补助等。问我有没有买房，有没有在上海买房的打算？如果有的话，<strong>二年拼多多就可以凑足首付了</strong>。</p>
+<p>然后他问我下单要建几张表？我说订单主表，订单条目表（有的场景下，订单条目会创建很多条）。</p>
+<p>面试官问我怎么优化？（针对创建的订单条目太多的问题）</p>
+<p>首先我说订单表可以分库分表来解决单DB的写入瓶颈；面试官不满意，我说可以先创建订单主表，如果订单条目表是瓶颈那么梳理一下业务，看看订单条目是否可以异步创建，走MQ，然后面试官还是不满意，我说我只能这么优化了，暂时没想到更多的方案</p>
+<p>然后又聊了下分布式事务，可靠消息最终一致性的方案讲了一下，讲解了我们目前怎样使用这套架构来采集上游数据，清洗数据，然后消费落到业务数据库的。</p>
+<p>又聊了一些其他的方案设计，细节的技术点聊的少，大多数都是系统设计方面</p>
+<p>我其实care到他的核心思路，因为拼多多商品应用的流量特别大，很多时候更多的时候在设计可以避免一些性能问题，而不是简单的堆机器。</p>
+<p>为什么之前离开阿里；</p>
+<p>工作中学到哪些，怎样觉得跳出到另外一个环境成长会更多；到新公司之后发现成长环境并不是自己期望，怎么办？</p>
+<p>然后问了我之前面试蚂蚁金服什么情况，因为HR只能在系统看到我今年面试超时，问原因，我说面试周期太长了，三面没时间；</p>
+<p>换<strong>工作的原因，下一份工作的期望等等</strong></p>
+<p>路上说让我发给他之前公司流水，然后hr又具体聊了一下薪资期望，当天晚上23点发了offer</p>
+<h2 id="招聘流程"><a href="#招聘流程" class="headerlink" title="招聘流程"></a>招聘流程</h2><p><strong>申请人简历审查 &gt; 招聘经理电话筛选 &gt; 编码风格评估 &gt; 整体能力评估 &gt; 最后一轮面试（考察团队协作、CTO 谈话、产品面试）</strong></p>
+<p>我们招聘技术经理时重点关注的是候选人的技术背景与团队的技术工作是否匹配。</p>
+<p>候选人的价值观和优势是否与他们将要管理的团队保持一致。</p>
+<p>管理技能与我们所期望的不匹配 </p>
+<p><a href="https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf" target="_blank" rel="noopener">Spotify 模式</a></p>
+<p>将所有工程师对各级领导的期望编成新的<a href="https://circleci.com/blog/why-we-re-designed-our-engineering-career-paths-at-circleci/" target="_blank" rel="noopener">技术能力模型</a></p>
+<p><strong>申请人简历审查 &gt; 招聘经理电话筛选 &gt; 面对面解题 &gt; 产品思维和工作拆分能力研讨 &gt; 最后一轮面试（技术团队成员面试、管理技能挖掘、产品面试）</strong></p>
+<blockquote>
+<p>筛选应聘者的正确价值观和技能</p>
+</blockquote>
+<h2 id="技术经理"><a href="#技术经理" class="headerlink" title="技术经理"></a>技术经理</h2><h3 id="更好地支持工程师"><a href="#更好地支持工程师" class="headerlink" title="更好地支持工程师"></a>更好地支持工程师</h3><p>管理与技术大不相同。我们需要把技术管理工作与普通的管理工作区别开，它们需要不同的工作技能。CircleCI 的技术经理现在致力于人员的管理中：关注工程师、技术负责人、团队负责人的职业发展。他们会与其下属工程师们进行定期的一对一职业发展谈话，并负责他们的目标设定、反馈和职业生涯指导。他们还会跨团队交流，以保证团队的健康、知识共享、践行公司的价值观和各个团队间目标的一致性。这意味着我们工程师的经理对其下属的职业发展有着很大的兴趣和投入，团队中也会有专人指导他们完成产品交付过程。</p>
+<h3 id="使我们的流程适用于我们新的价值观"><a href="#使我们的流程适用于我们新的价值观" class="headerlink" title="使我们的流程适用于我们新的价值观"></a>使我们的流程适用于我们新的价值观</h3><p>在我们了解了技术管理中真正重要的能力之后，我们针对人员管理能力和能否践行公司的价值观调整了应聘职位。</p>
+<p>新的流程强调人员管理和践行公司的价值观，我们通过下面的步骤来评估这些能力：</p>
+<ol>
+<li><strong>招聘经理电话筛选：</strong> 该职位的招聘经理会和应聘者谈论他们在不同领域的管理经验。</li>
+<li><strong>考察团队协作：</strong> 这是一轮协作面试，应聘者会与我们的一名技术经理搭档。他们会一起想办法，解决我们团队以前所面临的两个难题，这两个问题仍然可能再次出现。就像我们的技术结对考察一样，我们希望面试能反映出我们正在做的工作 —— 作为一个技术管理团队，一起讨论问题和寻找解决方案在我们的日常工作中是非常重要的。这个阶段的面试帮助我们更多地了解应聘者会如何应对团队的问题，以及他们是如何与同事合作的。</li>
+<li><strong>产品思维和工作拆分能力评估：</strong> 在这一轮面试中，应聘者会和我们的技术管理团队的另一名成员讨论一些工作和交付的能力相关的问题，从客户价值的角度来讨论该问题。</li>
+<li><strong>技术团队成员面试：</strong> 应聘者会与他将要共事的一名高级工程师谈话。他们也会一起探讨团队在过去所面临的协作问题。我们希望应聘者的能力足以在了解自身局限性的情况下仍能指导、帮助并参与技术团队的工作讨论，也能在尽量避免直接做决策情况下支持技术团队作出自己的决策。</li>
+<li><strong>管理技能挖掘：</strong> 这一阶段的谈话通常是与技术管理团队的高级成员进行的，会深入讨论领导技能和应聘者的管理经验。</li>
+<li><strong>产品面试：</strong> 最后一轮面试是与一名产品团队的成员进行的，重点考察应聘者对产品、流程和构建健康的技术团队的看法。</li>
+</ol>
+<p>他们关心整个团队，他们的价值观与团队的价值观相一致，他们能够帮助、带领我们的技术团队进入下一个成长阶段。</p>
+<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h3 id="小杰集合"><a href="#小杰集合" class="headerlink" title="小杰集合"></a>小杰集合</h3><p><a href="https://juejin.im/post/5e944f25e51d45470a4ac10d" target="_blank" rel="noopener">https://juejin.im/post/5e944f25e51d45470a4ac10d</a></p>
+<blockquote>
+<p>什么是集合?</p>
+<p>集合的特点?</p>
+<p>集合和数组的区别?</p>
+<p>使用集合框架的好处?</p>
+<p>常用的集合类有哪些？列出常见的集合，并进行简单的介绍</p>
+<p>对于Collection，你了解多少？</p>
+<p>集合框架底层数据结构</p>
+<p>哪些集合类是线程安全的？</p>
+<p>Java集合的快速失败机制 “fail-fast”？</p>
+<p>怎么确保一个集合不能被修改？</p>
+<p>关于Iterator，聊聊你的看法。迭代器 Iterator 是什么？</p>
+<p>Iterator 怎么使用？有什么特点？</p>
+<p>如何边遍历边移除 Collection 中的元素？</p>
+<p>Iterator 和 ListIterator 有什么区别？</p>
+<p>说一下 ArrayList 的优缺点?</p>
+<p>如何实现数组和 List 之间的转换？</p>
+<p>能否详细说一下toArray方法的实现？</p>
+<p>ArrayList 和 LinkedList 的区别是什么？</p>
+<p>ArrayList 和 Vector 的区别是什么？</p>
+<p>插入数据时，ArrayList、LinkedList、Vector谁速度较快？阐述 ArrayList、Vector、LinkedList 的存储性能和特性？</p>
+<p>多线程场景下如何使用 ArrayList？</p>
+<p>为什么 ArrayList 的 elementData 加上 transient 修饰？</p>
+<p>List 和 Set 的区别</p>
+<p>说一下 HashSet 的实现原理？</p>
+<p>HashSet如何检查重复？HashSet是如何保证数据不可重复的？</p>
+<p>hashCode（）与equals（）的相关规定</p>
+<p>HashSet与HashMap的区别</p>
+<p> ArrayList 是如何扩容的？</p>
+<p>什么是Hash算法</p>
+<p>什么是链表</p>
+<p>什么是红黑树</p>
+<p>ArrayList 和 LinkedList 遍历操作效率比较？ArrayList更快</p>
+<p>Array 和 ArrayList 有何区别？</p>
+<p>comparable 和 comparator的区别？</p>
+<p>如何实现 Array 和 List 之间的转换？</p>
+<p>TreeMap 和 TreeSet 在排序时如何比较元素？Collections 工具类中的 sort()方法如何比较元素？</p>
+<p>Collection 和 Collections 有什么区别？</p>
+<p>LinkHashSet？</p>
+</blockquote>
+<p>那么AbstractCollection呢？</p>
+<p>List，Set，Map三者的区别？</p>
+<p>用的最多的集合之一List，说说你对它的理解</p>
+<p>说说AbstractList</p>
+<p>索引和游标的关系</p>
+<p>expectedModCount 和 modCount</p>
+<p>说说远古时代的ArrayList——Vector</p>
+<p>简单说一下Stack</p>
+<p>说一下你对ArrayList源码的理解</p>
+<p>刚刚你说到了ListIterator，可以详细说一下嘛</p>
+<h3 id="HashMap的连环炮"><a href="#HashMap的连环炮" class="headerlink" title="HashMap的连环炮"></a>HashMap的连环炮</h3><p>csdn iQian <a href="https://blog.csdn.net/qq_21539671/article/details/102456379" target="_blank" rel="noopener">https://blog.csdn.net/qq_21539671/article/details/102456379</a></p>
+<p><a href="https://juejin.im/post/5e944f25e51d45470a4ac10d" target="_blank" rel="noopener">https://juejin.im/post/5e944f25e51d45470a4ac10d</a></p>
+<blockquote>
+<p>HashMap特性？</p>
+<p>HashMap与HashTable区别？</p>
+<p>HashMap线程不安全实际会如何体现？</p>
+<p>HashMap如何变成线程安全？</p>
+<p>HashMap的数据结构是什么？</p>
+<p>为什么String, Interger这样的wrapper类适合作为键？</p>
+<p>我们可以使用自定义的对象作为键吗？</p>
+<p>HashMap初始化传入的容量参数的值就是HashMap实际分配的空间么？</p>
+<p>什么是hash？</p>
+<p>什么是hash表？</p>
+<p>HashMap中hash函数是怎么实现的？</p>
+<p>HashMap中put的工作原理？</p>
+<p>HashMap中get的工作原理？</p>
+<p>HashMap扩容机制是什么？</p>
+<p>HashMap什么时候扩？</p>
+<p>HashMap每次扩多少？</p>
+<p>HashMap中如何解决碰撞问题？</p>
+<p>如何减少碰撞？</p>
+<p>HashMap中Entry链表太长，查找的时间复杂度可能达到 O(n)，怎么优化？</p>
+<p>如何提升性能？</p>
+<p>什么是Hash攻击？</p>
+</blockquote>
+<p>HashMap面试总结 </p>
+<p><a href="https://www.cnblogs.com/flyuz/p/11378491.html" target="_blank" rel="noopener">https://www.cnblogs.com/flyuz/p/11378491.html</a></p>
+<blockquote>
+<p>hashmap中的链表是单链表还是双向链表？</p>
+<p>看过HashMap源码吗，知道原理吗?</p>
+<p>hash冲突你还知道哪些解决办法？</p>
+<p>用LinkedList代替数组结构可以么?</p>
+<p>了解TreeMap吗?</p>
+<p>了解CurrentHashMap吗?</p>
+<p>HashMap在什么条件下扩容?</p>
+<p>HashMap在什么条件下缩容?</p>
+<p>为什么扩容是2的次幂?</p>
+<p>为什么要先高16位异或低16位再取模运算?</p>
+<p>讲讲HashMap的get/put的过程?</p>
+<p>知道hashmap中put元素的过程是什么样吗?</p>
+<p>知道hashmap中get元素的过程是什么样吗?</p>
+<p>hash算法是干嘛的？还知道哪些hash算法？</p>
+<p>说说String中hashcode的实现?</p>
+<p> 为什么HashMap的在链表元素数量超过8时改为红黑树?</p>
+<p>jdk1.8中HashMap与之前有哪些不同?</p>
+<p>为什么在解决hash冲突的时候，不直接用红黑树?而选择先用链表，再转红黑树?</p>
+<p>不用红黑树，用二叉查找树可以么?</p>
+<p>当链表转为红黑树后，什么时候退化为链表?时候退化为链表)</p>
+<p>HashMap在并发编程环境下有什么问题（jdk1.8以后）?如何解决这些问题？</p>
+<p>你一般用什么作为HashMap的key?健可以为Null值么?一般用什么作为HashMap的key?</p>
+<p>用可变类当HashMap的key有什么问题?</p>
+<p>实现一个自定义的class作为HashMap的key该如何实现？</p>
+<p>加载因子为什么是 0.75？</p>
+<p>当有哈希冲突时，HashMap 是如何查找并确认元素的？</p>
+<p>HashMap 是线程安全的吗，为什么不是线程安全的？</p>
+<p>HashMap 是如何导致死循环的？</p>
+<p>知道jdk1.8中hashmap改了啥么?</p>
+<p>为什么在解决hash冲突的时候，不直接用红黑树?而选择先用链表，再转红黑树?</p>
+<p>我不用红黑树，用二叉查找树可以么?</p>
+<p>那为什么阀值是8呢?</p>
+<p>当链表转为红黑树后，什么时候退化为链表?</p>
+<p>HashMap在并发编程环境下有什么问题啊?</p>
+<p>在jdk1.8中还有这些问题么?</p>
+<p>你一般怎么解决这些问题的？</p>
+<p>HashMap为什么不直接使用hashCode()处理后的哈希值直接作为table的下标？</p>
+<p>如何决定使用 HashMap 还是 TreeMap？</p>
+<p>如何决定使用 HashMap 还是 TreeMap？</p>
+<p>ConcurrentHashMap 和 Hashtable 的区别？</p>
+<p>ConcurrentHashMap 底层具体实现知道吗？实现原理是什么？</p>
+<p>Map和Lambda结合可以碰撞出什么样的火花</p>
+<p>Set 的源码你了解多少</p>
+<p>那么AbstractSet的源码呢，有没有什么了解</p>
+</blockquote>
+<p><a href="https://tech.meituan.com/2016/06/24/java-hashmap.html" target="_blank" rel="noopener">https://tech.meituan.com/2016/06/24/java-hashmap.html</a></p>
+<p><a href="https://juejin.im/post/5e944f25e51d45470a4ac10d" target="_blank" rel="noopener">https://juejin.im/post/5e944f25e51d45470a4ac10d</a></p>
+<blockquote>
+<p>HashMap特性？</p>
+<p>HashMap与HashTable区别？</p>
+<p>HashMap线程不安全实际会如何体现？</p>
+<p>HashMap如何变成线程安全？</p>
+<p>HashMap的数据结构是什么？</p>
+<p>为什么String, Interger这样的wrapper类适合作为键？</p>
+<p>我们可以使用自定义的对象作为键吗？</p>
+<p>HashMap初始化传入的容量参数的值就是HashMap实际分配的空间么？</p>
+<p>什么是hash？</p>
+<p>什么是hash表？</p>
+<p>HashMap中hash函数是怎么实现的？</p>
+<p>HashMap中put的工作原理？</p>
+<p>HashMap中get的工作原理？</p>
+<p>HashMap扩容机制是什么？</p>
+<p>HashMap什么时候扩？</p>
+<p>HashMap每次扩多少？</p>
+<p>HashMap中如何解决碰撞问题？</p>
+<p>如何减少碰撞？</p>
+<p>HashMap中Entry链表太长，查找的时间复杂度可能达到 O(n)，怎么优化？</p>
+<p>如何提升性能？</p>
+<p>什么是Hash攻击？</p>
+</blockquote>
+<p>HashMap面试总结 </p>
+<p><a href="https://www.cnblogs.com/flyuz/p/11378491.html" target="_blank" rel="noopener">https://www.cnblogs.com/flyuz/p/11378491.html</a></p>
+<blockquote>
+<p>hashmap中的链表是单链表还是双向链表？</p>
+<p>看过HashMap源码吗，知道原理吗?</p>
+<p>hash冲突你还知道哪些解决办法？</p>
+<p>用LinkedList代替数组结构可以么?</p>
+<p>了解TreeMap吗?</p>
+<p>了解CurrentHashMap吗?</p>
+<p>HashMap在什么条件下扩容?</p>
+<p>HashMap在什么条件下缩容?</p>
+<p>为什么扩容是2的次幂?</p>
+<p>为什么要先高16位异或低16位再取模运算?</p>
+<p>讲讲HashMap的get/put的过程?</p>
+<p>知道hashmap中put元素的过程是什么样吗?</p>
+<p>知道hashmap中get元素的过程是什么样吗?</p>
+<p>hash算法是干嘛的？还知道哪些hash算法？</p>
+<p>说说String中hashcode的实现?</p>
+<p> 为什么HashMap的在链表元素数量超过8时改为红黑树?</p>
+<p>jdk1.8中HashMap与之前有哪些不同?</p>
+<p>为什么在解决hash冲突的时候，不直接用红黑树?而选择先用链表，再转红黑树?</p>
+<p>不用红黑树，用二叉查找树可以么?</p>
+<p>当链表转为红黑树后，什么时候退化为链表?时候退化为链表)</p>
+<p>HashMap在并发编程环境下有什么问题（jdk1.8以后）?如何解决这些问题？</p>
+<p>你一般用什么作为HashMap的key?健可以为Null值么?一般用什么作为HashMap的key?</p>
+<p>用可变类当HashMap的key有什么问题?</p>
+<p>实现一个自定义的class作为HashMap的key该如何实现？</p>
+<p>加载因子为什么是 0.75？</p>
+<p>当有哈希冲突时，HashMap 是如何查找并确认元素的？</p>
+<p>HashMap 是线程安全的吗，为什么不是线程安全的？</p>
+<p>HashMap 是如何导致死循环的？</p>
+<p>知道jdk1.8中hashmap改了啥么?</p>
+<p>为什么在解决hash冲突的时候，不直接用红黑树?而选择先用链表，再转红黑树?</p>
+<p>我不用红黑树，用二叉查找树可以么?</p>
+<p>那为什么阀值是8呢?</p>
+<p>当链表转为红黑树后，什么时候退化为链表?</p>
+<p>HashMap在并发编程环境下有什么问题啊?</p>
+<p>在jdk1.8中还有这些问题么?</p>
+<p>你一般怎么解决这些问题的？</p>
+<p>HashMap为什么不直接使用hashCode()处理后的哈希值直接作为table的下标？</p>
+<p>如何决定使用 HashMap 还是 TreeMap？</p>
+<p>如何决定使用 HashMap 还是 TreeMap？</p>
+<p>ConcurrentHashMap 和 Hashtable 的区别？</p>
+<p>ConcurrentHashMap 底层具体实现知道吗？实现原理是什么？</p>
+<p>Map和Lambda结合可以碰撞出什么样的火花</p>
+<p>Set 的源码你了解多少</p>
+<p>那么AbstractSet的源码呢，有没有什么了解</p>
+</blockquote>
+<p><a href="https://tech.meituan.com/2016/06/24/java-hashmap.html" target="_blank" rel="noopener">https://tech.meituan.com/2016/06/24/java-hashmap.html</a></p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2020/06/29/Mysql5.7%E4%B8%AD%E6%96%87%E5%8F%82%E8%80%83%E6%8C%87%E5%8D%97/">
+        <span>Mysql5.7中文参考指南</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库"><span class="toc-number">1.</span> <span class="toc-text">数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO"><span class="toc-number">2.</span> <span class="toc-text">IO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多线程"><span class="toc-number">3.</span> <span class="toc-text">多线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#算法"><span class="toc-number">4.</span> <span class="toc-text">算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设计模式"><span class="toc-number">5.</span> <span class="toc-text">设计模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实际业务设计"><span class="toc-number">6.</span> <span class="toc-text">实际业务设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网络"><span class="toc-number">7.</span> <span class="toc-text">网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MQ"><span class="toc-number">8.</span> <span class="toc-text">MQ</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作系统"><span class="toc-number">9.</span> <span class="toc-text">操作系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jvm"><span class="toc-number">10.</span> <span class="toc-text">jvm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#团队"><span class="toc-number">11.</span> <span class="toc-text">团队</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#个人"><span class="toc-number">12.</span> <span class="toc-text">个人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#个人职业规划"><span class="toc-number">13.</span> <span class="toc-text">个人职业规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目"><span class="toc-number">14.</span> <span class="toc-text">项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#架构"><span class="toc-number">15.</span> <span class="toc-text">架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spring"><span class="toc-number">16.</span> <span class="toc-text">spring</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#springmvc"><span class="toc-number">17.</span> <span class="toc-text">springmvc</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#springboot"><span class="toc-number">18.</span> <span class="toc-text">springboot</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#springcloud"><span class="toc-number">19.</span> <span class="toc-text">springcloud</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dubbo"><span class="toc-number">20.</span> <span class="toc-text">dubbo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微服务"><span class="toc-number">21.</span> <span class="toc-text">微服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ES"><span class="toc-number">22.</span> <span class="toc-text">ES</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux"><span class="toc-number">23.</span> <span class="toc-text">linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java"><span class="toc-number">24.</span> <span class="toc-text">java</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tomcat"><span class="toc-number">25.</span> <span class="toc-text">tomcat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mybatis"><span class="toc-number">26.</span> <span class="toc-text">mybatis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis"><span class="toc-number">27.</span> <span class="toc-text">redis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx"><span class="toc-number">28.</span> <span class="toc-text">nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#中间件"><span class="toc-number">29.</span> <span class="toc-text">中间件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有什么问题想问面试官"><span class="toc-number">30.</span> <span class="toc-text">有什么问题想问面试官</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hr"><span class="toc-number">31.</span> <span class="toc-text">hr</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#招聘流程"><span class="toc-number">32.</span> <span class="toc-text">招聘流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#技术经理"><span class="toc-number">33.</span> <span class="toc-text">技术经理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#更好地支持工程师"><span class="toc-number">33.1.</span> <span class="toc-text">更好地支持工程师</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使我们的流程适用于我们新的价值观"><span class="toc-number">33.2.</span> <span class="toc-text">使我们的流程适用于我们新的价值观</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集合"><span class="toc-number">34.</span> <span class="toc-text">集合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#小杰集合"><span class="toc-number">34.1.</span> <span class="toc-text">小杰集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap的连环炮"><span class="toc-number">34.2.</span> <span class="toc-text">HashMap的连环炮</span></a></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2020 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        John Doe
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+<script src="/js/mdui.min.js"></script>
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
