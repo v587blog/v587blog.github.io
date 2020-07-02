@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+    
+    
+<link rel="stylesheet" href="/css/mdui.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            程序员三门课读书笔记 | Hexo
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Hexo</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-2">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/tools/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">工具箱</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-2">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">John Doe</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:xxx@xxx.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a href="https://garybear.cn/hexo-theme-meadow/" target="_blank" rel="noopener" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">程序员三门课读书笔记</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2020-07-02
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2020-07-02
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=程序员三门课读书笔记&url=http://yoursite.com/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/&pic=http://yoursite.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=程序员三门课读书笔记&url=http://yoursite.com/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/&via=John Doe" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://yoursite.com/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/&title=程序员三门课读书笔记" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=程序员三门课读书笔记&summary=&pics=http://yoursite.com/null&url=http://yoursite.com/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://yoursite.com/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/&text=程序员三门课读书笔记" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h1 id="程序员三门课读书笔记"><a href="#程序员三门课读书笔记" class="headerlink" title="程序员三门课读书笔记"></a>程序员三门课读书笔记</h1><p>作者：于君泽（右军） </p>
+<h2 id="工型人才"><a href="#工型人才" class="headerlink" title="工型人才"></a>工型人才</h2><p>所谓“工型”，是指从下到上的能力提升过程。具体来说，就是先要具备完成完整应用的能力，包括：线上运维，成为熟手，这是下面的一横；在某些领域足够深入，成为高手，这是中间的一竖；在达到更高的水平之后，兼通很多领域，比如业务、产品、项目管理、测试、运维、团队组织，成为驱动者和领导者，这是上面的一横。</p>
+<h2 id="领导力"><a href="#领导力" class="headerlink" title="领导力"></a>领导力</h2><p>领导力就是心存善念、劝人向善</p>
+<p>GitHub上的开源项目贡献一些整洁的代码</p>
+<h2 id="技术成长"><a href="#技术成长" class="headerlink" title="技术成长"></a>技术成长</h2><p>程序员需要掌握多门编程语言吗？</p>
+<ul>
+<li>一名画家若擅长使用多种类型的画笔，就可以创作出多种类型的艺术画作</li>
+</ul>
+<p>带着问题学习</p>
+<ul>
+<li>六合法</li>
+</ul>
+<p>教是最好的学</p>
+<ul>
+<li><p>写博客</p>
+</li>
+<li><p>技术分享</p>
+</li>
+<li><p>线下会议</p>
+</li>
+<li><p>线上教学</p>
+</li>
+</ul>
+<h2 id="编码规范"><a href="#编码规范" class="headerlink" title="编码规范"></a>编码规范</h2><p>Google Java Style Guide</p>
+<ul>
+<li>Google Java Style Guide包含的内容有源文件基础、源文件结构、格式、命名、编程实践和Javadoc</li>
+</ul>
+<p>阿里巴巴编码规范</p>
+<p>一套好的规范应该搭配好的审查清单（CheckList）</p>
+<p>《Java开发手册1.5.0》就是一个不错的融合规约和审查清单的案例</p>
+<h2 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h2><h2 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h2><p>测试的覆盖率</p>
+<h2 id="TDD-测试驱动设计"><a href="#TDD-测试驱动设计" class="headerlink" title="TDD 测试驱动设计"></a>TDD 测试驱动设计</h2><p>测试驱动设计的基本思想就是在开发功能代码之前先编写测试代码，也就是说在明确要开发的需求之后，首先思考如何分析这个需求，并完成测试代码的编写，然后编写相关代码来满足这些测试用例，最后循环添加其他测试用例，直到该需求对应的测试用例都测试通过。</p>
+<p>测试驱动设计有3个原则，如下所述。</p>
+<ul>
+<li>原则1：无测试，不代码。</li>
+<li>原则2：单元测试不在多，能够识别出问题即可。</li>
+<li>原则3：代码不在多，让当前单元测试全部通过即可。</li>
+</ul>
+<p>第1步：金丝雀测试</p>
+<blockquote>
+<p>“金丝雀测试”的概念来自早期的煤炭矿井行业：金丝雀对有毒气体比较敏感，在19世纪左右，英国的矿井工人在下矿井时常常会带一只金丝雀，如果矿井内的有毒气体超标，金丝雀就会立刻死亡，这会救矿井工人一命。</p>
+</blockquote>
+<p>同样，在测试驱动设计实践中，在开发具体的测试用例之前，也需要先写一个空返回值方法的测试用例，确保整个编译、运行和JUnit环境是正常运行的。</p>
+<p>第2步：针对最简单的测试用例，编写第1个最简单的单元测试</p>
+<p>第3步：然后继续编写针对其它测试用例的单元测试</p>
+<p>第4步：重构</p>
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h2 id="使用静态代码分析工具"><a href="#使用静态代码分析工具" class="headerlink" title="使用静态代码分析工具"></a>使用静态代码分析工具</h2><p>在整个软件开发生命周期中，大概有30%～70%的代码逻辑设计和编码缺陷是可以通过静态代码分析发现和修复的。</p>
+<p>使用静态代码分析工具自动化执行代码审查和分析</p>
+<p>静态代码分析工具</p>
+<ul>
+<li>Checkstyle</li>
+</ul>
+<p>在IntelliJ IDEA和Eclipse上都有Checkstyle的插件。</p>
+<p>例如可以直接使用Checkstyle配合Google Java Style Guide配置文件对Java代码进行静态扫描</p>
+<ul>
+<li>FindBugs</li>
+</ul>
+<p>◎ Dodgy code：糟糕的代码。</p>
+<p>◎ Bad practice：不好的做法。</p>
+<p>◎ Correctness：可能不正确。</p>
+<p>◎ Experimental：实验。</p>
+<p>◎ Internationalization：国际化。</p>
+<p>◎ Malicious code vulnerility：恶意的代码漏洞。</p>
+<p>◎ Multithreaded correctness：多线程问题。</p>
+<p>◎ Performance：性能问题。</p>
+<ul>
+<li>P3C</li>
+</ul>
+<p>支持目前流行的多种IDE，例如IDEA、Eclipse等</p>
+<p>阿里巴巴推出的P3C插件</p>
+<h2 id="代码审查（Code-Review）"><a href="#代码审查（Code-Review）" class="headerlink" title="代码审查（Code Review）"></a>代码审查（Code Review）</h2><p>通过代码审查可以提升代码的质量，找出潜在的Bug，保证代码风格的统一</p>
+<p>它是一个可以相互学习的好机会，比如审查者（Reviewer）可以在代码中发现他人的优秀编码习惯、对优秀设计模式的使用及使用了哪些好的API等，对了解整个系统和业务也有很好的帮助；另外，通过他人提出的一些改进意见，被审查者可以很好地学习到一些思考方式，在开发过程中有时“当局者迷”，审查者则可以从旁观者的角度重新审查代码及代码背后的设计思想。</p>
+<p>其好处不仅仅是代码审查自身，还是在代码审查过程中产生的思考及思考之间的碰撞。</p>
+<p>1．要有审查清单</p>
+<p>一般来说，一份代码审查清单应该包括如下几个大的类目。</p>
+<p>◎ 代码结构：是否包含超长代码，代码层次嵌套是否过深，函数是否入参过多，循环条件是否有跳出点，if语句是否有对应的else语句，是否存在重复的代码，等等。</p>
+<p>◎ 代码安全性：I/O流是否正常关闭，资金计算是否使用了Double数据类型，是否有超大的临时对象，线程池大小是否合理，异常是否被忽略，是否有详细的日志记录，是否存在并发问题，参数是否做了必要的检查，远程服务的入参出参是否实现了Serialization并且自定义了serialVersionUID，应用是否依赖了SNAPSHOT版本的类库，等等。</p>
+<p>◎ 代码性能：是否有长SQL语句、SQL语句是否用到索引，是否有成熟的类库可以替换自己实现的代码，是否可以考虑单例模式，是否可以考虑线程池，是否可以考虑NIO，是否可以进行锁优化，等等。</p>
+<p>◎ 代码注释：指类及方法是否有注释，注释是否可以表达其准确含义，在代码中是否存在FIXME及TODO等注释，注释是否包含边界值及对异常情况的说明，等等。</p>
+<p>◎ 单元测试：代码是否有可测试性，新代码是否有单元测试，单元测试是否可以覆盖所有场景，等等。</p>
+<p>◎ 代码优化：是否可以使用枚举代替自定义的常量，在代码中是否包含魔法值，是否可以使用Optional代替NPE的检查，是否可以使用Stream代替for循环，是否可以使用设计模式，等等。</p>
+<p>◎ 其他：代码逻辑是否正确，是否实现了业务功能，代码是否有好的可读性及可测试性，等等。</p>
+<p>2．选择高效的工具</p>
+<p>1）Phabricator</p>
+<p>2）Gerrit</p>
+<p>3）Code Striker</p>
+<p>3．重点关注的改动点</p>
+<p>开发者通读改动点附近的全部代码，重点关注改动点，而不是只看改动点处的代码。通过通读全部代码，可以更好地发现问题，尤其是和业务逻辑相关的问题。</p>
+<p>4．代码审查应该是日常性的工作</p>
+<p>代码审查应该是伴随着代码提交的，而不是伴随着代码发布的</p>
+<p>最好的实践是在每次提交改动较大的代码后都找到对应的开发人员进行代码审查</p>
+<p>5．不要一次审查太多代码</p>
+<p>当代码行数超过200时，缺陷密度（每千行代码的缺陷数，为缺陷数量与代码行或功能点数量的比值，其测量单位是defects/KLOC）就会急剧减小，超过400后，缺陷密度几乎为0。</p>
+<p>每次代码审查的代码最好在200行左右，最多不要超过400行，这样更有利于代码审查者集中精力，最好每天都抽出固定的一段时间，来集中精力对少部分代码做代码审查</p>
+<p>6．进行一次代码审查的时间不要太长</p>
+<p>进行一次代码审查的时长应控制在90分钟内，这里建议控制在60分钟以内，如果审查时长超过90分钟，则代码审查的效率会大大降低。也就是说，虽然花费了更多的时间，但得到了更糟糕的结果。</p>
+<p>在进行代码审查之前，应该规划好需要审查的代码长度及时长，尽量控制在<strong>200行代码、60分钟左右</strong>，这样的效率是最高的。</p>
+<h2 id="清单和模板"><a href="#清单和模板" class="headerlink" title="清单和模板"></a>清单和模板</h2><p>清单需要具备简洁、直接、易操作的特点</p>
+<blockquote>
+<p>2005年8月29日，卡特里娜飓风横扫国外某市，部分地区受灾严重，洪水肆虐，通信中断，消息无法送出。当人们最终将灾情反映到某个联邦官员时却被告知耐心等待。因为需要将相关信息逐级上报，所以传统的指令和控制系统很快被大量的信息和指令淹没。政府拒绝放弃传统的指令模式，灾情正在不断恶化，各级政府却在争论决策权的归属问题，满载饮用水和食物的卡车迟迟不能进入灾区</p>
+</blockquote>
+<p>我们可以从这个故事总结出下几点。</p>
+<p>◎ 面对复杂的问题，做决策往往不容易。各级政府在争论决策权时，事态已经在恶化了。</p>
+<p>◎ 要建立应急处理机制，简单、直接、有效。</p>
+<p>◎ 要有应对各种问题的清单。</p>
+<p>简单总结一下，在解决问题时要有如下几个步骤。</p>
+<p>（1）出了什么问题，汇总问题和现象，试着探究原因。</p>
+<p>（2）找到解决问题的流程，应该谁负责驱动，流程有哪些环节，有哪些可选方案。</p>
+<p>（3）按步骤解决问题。</p>
+<p>代码审查安全维度的清单</p>
+<p><img src="C:%5CUsers%5Ck%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593341427642.png" alt="1593341427642"></p>
+<p>执行者在面对太多的清单内容时很容易体力疲劳、出问题，所以<strong>最好将流程和审查本身都强制到工具</strong>中。</p>
+<p>SQA和SCM人员都会拿着长长的Excel表让研发负责人或者PM打钩，表示“做了某项工作”。</p>
+<p>交付报告。研发人员必须在完成代码之后进行自测、静态代码评估和持续集成报告等，并在这些被判定为“完成”之后，才能进入下一个流程。</p>
+<h2 id="产品需求文档模板"><a href="#产品需求文档模板" class="headerlink" title="产品需求文档模板"></a>产品需求文档模板</h2><h2 id="程序员的工作法则"><a href="#程序员的工作法则" class="headerlink" title="程序员的工作法则"></a>程序员的工作法则</h2><p><strong>工具化法则</strong></p>
+<ul>
+<li>上下游联调case超10万情况：</li>
+</ul>
+<p>重发工具：</p>
+<p>做一个能够自动打印历史请求的工具，然后通过工具平台将打印的请求重发到指定的服务器上。</p>
+<ul>
+<li>CI失败：</li>
+</ul>
+<p>隔离下游Mock工具：</p>
+<p>能够自动采集对下游系统成功调用的结果，并将其转换成缓存文件，后续的CI都使用该缓存文件，自动完成对下游的隔离</p>
+<ul>
+<li>系统迁移：</li>
+</ul>
+<p>切流对比工具：</p>
+<ul>
+<li>登录不同的系统去查看对应的日志文件</li>
+</ul>
+<p>日志关联工具（“望眼镜”）：</p>
+<p>在SOA架构下排查问题时，需要登录不同的系统去查看对应的日志文件，这样成本很高，某工具团队开发了一个基于traceId的日志关联工具。</p>
+<ul>
+<li>故障排查模块</li>
+</ul>
+<p><strong>自动化法则</strong></p>
+<p>1．查询和定位自动化</p>
+<p>工具就是Alfred</p>
+<p>2．项目开发环境</p>
+<p>使用idea</p>
+<p>3.Web测试</p>
+<p>Selenium，我们可以录制操作过程，自动生成测试脚本，然后实现相同功能的自动测试</p>
+<p>4．部署、运维</p>
+<p>借助Shell脚本自动完成一些任务</p>
+<p>5．测试</p>
+<p>工具化法则、自动化法则、加速法则都来自一线痛点</p>
+<h2 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h2><p>应该将文档整理成思维树，标注定义、关键描述、关键词、关联词和详细的文档链接。这对新人来讲更容易找到切入点，并快速了解项目或系统的全貌，以及可能与自己未来工作相关的上下文（内涵、外延）是什么。</p>
+<p>◎ 我们需要保留项目研发过程中的<strong>关键文档</strong>，比如需求和系统分析文档，这些是项目中不可或缺的文档。</p>
+<p>◎ 一个系统或平台都需要有<strong>Core文档</strong>，比如领域模型、主体架构等，由于这部分文档的更新并不频繁，所以可以定期维护。</p>
+<p>◎ <strong>用例即文档</strong>，使验收测试及接口测试等保持稳定，是研究细节和用户场景的入手点。</p>
+<p>◎ 提倡<strong>活文档</strong>，具体的推荐做法是接口文档通过接口声明生成，接口声明对于每个参数都会有说明。在<strong>Swagger</strong> Editor中，我们可以基于YAML语法定义RESTful API，它会自动生成一篇排版优美的API文档，在API改变之后，API文档也会随之改变。</p>
+<h2 id="关于YAGNI"><a href="#关于YAGNI" class="headerlink" title="关于YAGNI"></a>关于YAGNI</h2><p>YAGNI（You Ain’t Gonna Need it，你不会需要它）的意思是：如无必要，别增复杂度。</p>
+<p>YAGNI并非不做预设计，而是在成本、复杂度之间做权衡。我们现在需要建立一些机制（比如抽象、约束）应对它。注意，只是建立机制，在实现层面仍然按当前刚刚好的功能实现，除非能找到额外复杂度非常小的方案把预期的变化也覆盖了。</p>
+<h2 id="程序员的工具箱"><a href="#程序员的工具箱" class="headerlink" title="程序员的工具箱"></a>程序员的工具箱</h2><p>Perl之父Larry Wall曾在Programming Perl一书中提到<strong>：程序员的三个美德是懒惰、不耐烦和傲慢</strong>。懒惰，是程序员美德的第一要素。</p>
+<p>1．显示器</p>
+<p>在StackOverflow2018开发者调查报告中显示，有51.1%的开发者使用两个显示器，有17%的开发者使用三个以上显示器。</p>
+<p>额外配置一台24寸左右的显示器可以提升工作效率。因为作为程序员，我们可能要同时和IDE、Linux命令行及浏览器等打交道，有多台显示器可以帮我们减少切换时间。</p>
+<p>2．外设</p>
+<p>一个好的机械键盘或电容键盘加一个比较灵敏的无线鼠标，不仅可以令一个程序员的工作效率得到很大提升，还可以在一定程度上起到愉悦心情的作用，尤其是通过调试解决一个Bug后，最后敲击键盘的那一刻。</p>
+<h2 id="可帮我们提升工作效率的操作系统"><a href="#可帮我们提升工作效率的操作系统" class="headerlink" title="可帮我们提升工作效率的操作系统"></a>可帮我们提升工作效率的操作系统</h2><p>程序员选择操作系统的优先级顺序应该是Mac OS、Linux、Windows。</p>
+<h2 id="可帮我们提升工作效率的软件"><a href="#可帮我们提升工作效率的软件" class="headerlink" title="可帮我们提升工作效率的软件"></a>可帮我们提升工作效率的软件</h2><p>1．开发工具 IntelliJ IDEA</p>
+<p>2．版本控制工具 svn或git</p>
+<p>3．自动化构建工具 Maven和Gradle</p>
+<p>4．画图工具 XMind Rational Rose  StarUML（SU）Visual Paradigm for UML（VP-UML）</p>
+<p>5 . Markdown编辑器 </p>
+<p>6．文本编辑器 Sublime Text/Atom/Nodepad++</p>
+<p>7．其他软件 SwitchHosts /Postman</p>
+<h2 id="在线工具"><a href="#在线工具" class="headerlink" title="在线工具"></a>在线工具</h2><p>Grepcode（<a href="http://grepcode.com/）" target="_blank" rel="noopener">http://grepcode.com/）</a> 通过Java的projects、classes等关键字在线查看对应的源码</p>
+<p>SearchCode（<a href="https://searchcode.com/）" target="_blank" rel="noopener">https://searchcode.com/）</a> 源码搜索引擎</p>
+<p>mvnrepository（<a href="http://mvnrepository.com）" target="_blank" rel="noopener">http://mvnrepository.com）</a> 查询Maven的gav</p>
+<p>AutoJCode（<a href="http://www.autojcode.com/code/sql2class.jsp）可以从SQL的建表语句中生成一个DO类" target="_blank" rel="noopener">http://www.autojcode.com/code/sql2class.jsp）可以从SQL的建表语句中生成一个DO类</a></p>
+<p>BeJSON（<a href="http://www.bejson.com/json2javapojo）" target="_blank" rel="noopener">http://www.bejson.com/json2javapojo）</a> JSON转成Java对象</p>
+<p>becorn（<a href="http://www.pdtools.net/tools/becorn.jsp）" target="_blank" rel="noopener">http://www.pdtools.net/tools/becorn.jsp）</a> Corn表达式的生成</p>
+<p><a href="http://tool.chinaz.com/tools/regexgenerate" target="_blank" rel="noopener">http://tool.chinaz.com/tools/regexgenerate</a> 正则表达式生成</p>
+<p>“站长工具”的编码转换（<a href="http://tool.chinaz.com/tools/unicode.aspx）" target="_blank" rel="noopener">http://tool.chinaz.com/tools/unicode.aspx）</a></p>
+<p>时间戳转换工具（<a href="http://tool.chinaz.com/Tools/unixtime.aspx）" target="_blank" rel="noopener">http://tool.chinaz.com/Tools/unixtime.aspx）</a></p>
+<p>世界时间转换 Timebie（<a href="http://www.timebie.com/cn/easternbeijing.php）" target="_blank" rel="noopener">http://www.timebie.com/cn/easternbeijing.php）</a></p>
+<p>加密、解密 <a href="http://tool.chinaz.com/tools/textencrypt.aspx" target="_blank" rel="noopener">http://tool.chinaz.com/tools/textencrypt.aspx</a></p>
+<p>单位换算 Convertworld（<a href="https://www.convertworld.com/zh-hans/）" target="_blank" rel="noopener">https://www.convertworld.com/zh-hans/）</a></p>
+<p>JSON在线验证及格式化 Json.cn（<a href="https://www.json.cn/）" target="_blank" rel="noopener">https://www.json.cn/）</a></p>
+<p>Diffchecker（<a href="https://www.diffchecker.com/）" target="_blank" rel="noopener">https://www.diffchecker.com/）</a></p>
+<p>站长工具”提供的正则验证（<a href="http://tool.chinaz.com/regex）" target="_blank" rel="noopener">http://tool.chinaz.com/regex）</a></p>
+<p>◎ ASCII对照表：<a href="http://tool.oschina.net/commons?type=4。" target="_blank" rel="noopener">http://tool.oschina.net/commons?type=4。</a></p>
+<p>◎ HTTP状态码：<a href="http://tool.oschina.net/commons?type=5。" target="_blank" rel="noopener">http://tool.oschina.net/commons?type=5。</a></p>
+<p>◎ HTTP Content-type:<a href="http://tool.oschina.net/commons。" target="_blank" rel="noopener">http://tool.oschina.net/commons。</a></p>
+<p>◎ TCP/UDP常见端口参考：<a href="http://tool.oschina.net/commons?type=7。" target="_blank" rel="noopener">http://tool.oschina.net/commons?type=7。</a></p>
+<p>◎ HTML转义字符：<a href="http://tool.oschina.net/commons?type=2。" target="_blank" rel="noopener">http://tool.oschina.net/commons?type=2。</a></p>
+<p>◎ RGB颜色参考：<a href="http://tool.oschina.net/commons?type=3。" target="_blank" rel="noopener">http://tool.oschina.net/commons?type=3。</a></p>
+<p>◎ 网页字体参考：<a href="http://tool.oschina.net/commons?type=8。" target="_blank" rel="noopener">http://tool.oschina.net/commons?type=8。</a></p>
+<p>ProcessOn（<a href="https://www.processon.com/）" target="_blank" rel="noopener">https://www.processon.com/）</a></p>
+<p>coderunner（<a href="https://tool.lu/coderunner/）" target="_blank" rel="noopener">https://tool.lu/coderunner/）</a></p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2020/06/30/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/">
+        <span>面试总结</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2020/07/02/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E9%97%A8%E8%AF%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#程序员三门课读书笔记"><span class="toc-number">1.</span> <span class="toc-text">程序员三门课读书笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#工型人才"><span class="toc-number">1.1.</span> <span class="toc-text">工型人才</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#领导力"><span class="toc-number">1.2.</span> <span class="toc-text">领导力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#技术成长"><span class="toc-number">1.3.</span> <span class="toc-text">技术成长</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编码规范"><span class="toc-number">1.4.</span> <span class="toc-text">编码规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单元测试"><span class="toc-number">1.5.</span> <span class="toc-text">单元测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指标"><span class="toc-number">1.6.</span> <span class="toc-text">指标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TDD-测试驱动设计"><span class="toc-number">1.7.</span> <span class="toc-text">TDD 测试驱动设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最佳实践"><span class="toc-number">1.8.</span> <span class="toc-text">最佳实践</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用静态代码分析工具"><span class="toc-number">1.9.</span> <span class="toc-text">使用静态代码分析工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码审查（Code-Review）"><span class="toc-number">1.10.</span> <span class="toc-text">代码审查（Code Review）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#清单和模板"><span class="toc-number">1.11.</span> <span class="toc-text">清单和模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#产品需求文档模板"><span class="toc-number">1.12.</span> <span class="toc-text">产品需求文档模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#程序员的工作法则"><span class="toc-number">1.13.</span> <span class="toc-text">程序员的工作法则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文档"><span class="toc-number">1.14.</span> <span class="toc-text">文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于YAGNI"><span class="toc-number">1.15.</span> <span class="toc-text">关于YAGNI</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#程序员的工具箱"><span class="toc-number">1.16.</span> <span class="toc-text">程序员的工具箱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可帮我们提升工作效率的操作系统"><span class="toc-number">1.17.</span> <span class="toc-text">可帮我们提升工作效率的操作系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可帮我们提升工作效率的软件"><span class="toc-number">1.18.</span> <span class="toc-text">可帮我们提升工作效率的软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在线工具"><span class="toc-number">1.19.</span> <span class="toc-text">在线工具</span></a></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2020 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        John Doe
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+<script src="/js/mdui.min.js"></script>
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
