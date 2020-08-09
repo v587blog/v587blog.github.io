@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+    
+    
+<link rel="stylesheet" href="/css/mdui.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            区块链入门详细教程 | Hexo
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Hexo</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-2">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/tools/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">工具箱</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-2">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">John Doe</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:xxx@xxx.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a href="https://garybear.cn/hexo-theme-meadow/" target="_blank" rel="noopener" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">区块链入门详细教程</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2020-08-09
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2020-08-09
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=区块链入门详细教程&url=http://yoursite.com/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/&pic=http://yoursite.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=区块链入门详细教程&url=http://yoursite.com/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/&via=John Doe" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://yoursite.com/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/&title=区块链入门详细教程" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=区块链入门详细教程&summary=&pics=http://yoursite.com/null&url=http://yoursite.com/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://yoursite.com/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/&text=区块链入门详细教程" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h1 id="区块链入门详细教程"><a href="#区块链入门详细教程" class="headerlink" title="区块链入门详细教程"></a>区块链入门详细教程</h1><p>教程目录：</p>
+<p>\1. <a href="http://c.biancheng.net/view/1884.html" target="_blank" rel="noopener">区块链是什么？超级详细，看了无师自通！</a></p>
+<p>\2. <a href="http://c.biancheng.net/view/1888.html" target="_blank" rel="noopener">加密数字货币前传：从大卫·乔姆到中本聪</a></p>
+<p>\3. <a href="http://c.biancheng.net/view/1889.html" target="_blank" rel="noopener">什么是去中心化？比特币是如何实现去中心化的？（非常详细）</a></p>
+<p>\4. <a href="http://c.biancheng.net/view/1892.html" target="_blank" rel="noopener">比特币是如何转账的——比特币区块链的五个技术性细节</a></p>
+<p>\5. <a href="http://c.biancheng.net/view/1894.html" target="_blank" rel="noopener">分布式账本和去中心网络</a></p>
+<p>\6. <a href="http://c.biancheng.net/view/1895.html" target="_blank" rel="noopener">UTXO：未使用的交易输出，比特币核心概念之一</a></p>
+<p>\7. <a href="http://c.biancheng.net/view/1896.html" target="_blank" rel="noopener">比特币区块链的数据结构</a></p>
+<p>\8. <a href="http://c.biancheng.net/view/1897.html" target="_blank" rel="noopener">工作量证明共识机制</a></p>
+<p>\9. <a href="http://c.biancheng.net/view/1898.html" target="_blank" rel="noopener">挖矿是什么意思？矿工都做了什么？</a></p>
+<p>\10. <a href="http://c.biancheng.net/view/1908.html" target="_blank" rel="noopener">区块链的应用有什么？区块链将带来什么变革？</a></p>
+<p>\11. <a href="http://c.biancheng.net/view/1912.html" target="_blank" rel="noopener">区块链将成为互联网基础协议，类似于TCP/IP、HTTP</a></p>
+<p>\12. <a href="http://c.biancheng.net/view/1913.html" target="_blank" rel="noopener">以太坊是什么？为什么说它是区块链2.0的代表</a></p>
+<p>\13. <a href="http://c.biancheng.net/view/1915.html" target="_blank" rel="noopener">V神是谁？他是以太坊创始人，是区块链界的真正大佬</a></p>
+<p>\14. <a href="http://c.biancheng.net/view/1917.html" target="_blank" rel="noopener">智能合约是什么？</a></p>
+<p>\15. <a href="http://c.biancheng.net/view/1918.html" target="_blank" rel="noopener">以太坊智能合约是什么？</a></p>
+<p>\16. <a href="http://c.biancheng.net/view/1919.html" target="_blank" rel="noopener">V神说以太坊的Token系统</a></p>
+<p>\17. <a href="http://c.biancheng.net/view/1920.html" target="_blank" rel="noopener">机器比人更需要通证</a></p>
+<p>\18. <a href="http://c.biancheng.net/view/1922.html" target="_blank" rel="noopener">ERC20通证标准是什么？</a></p>
+<p>\19. <a href="http://c.biancheng.net/view/1923.html" target="_blank" rel="noopener">The DAO众筹事件与以太坊分叉</a></p>
+<p>\20. <a href="http://c.biancheng.net/view/1925.html" target="_blank" rel="noopener">通证该如何设计？如何表示资产？</a></p>
+<p>\21. <a href="http://c.biancheng.net/view/1931.html" target="_blank" rel="noopener">通证的分类（各种分类一览表）</a></p>
+<p>\22. <a href="http://c.biancheng.net/view/1932.html" target="_blank" rel="noopener">以太坊智能合约的技术与组件</a></p>
+<p>\23. <a href="http://c.biancheng.net/view/1933.html" target="_blank" rel="noopener">ERC721标准与加密猫</a></p>
+<p>\24. <a href="http://c.biancheng.net/view/1935.html" target="_blank" rel="noopener">以太坊的账户（外部账户和合约账户）</a></p>
+<p>\25. <a href="http://c.biancheng.net/view/1936.html" target="_blank" rel="noopener">区块链的四大特征</a></p>
+<p>\26. <a href="http://c.biancheng.net/view/1939.html" target="_blank" rel="noopener">区块链3.0是什么样子的？</a></p>
+<p>\27. <a href="http://c.biancheng.net/view/1956.html" target="_blank" rel="noopener">EOS是什么？EOS和比特币、以太坊有什么区别？</a></p>
+<p>\28. <a href="http://c.biancheng.net/view/1959.html" target="_blank" rel="noopener">EOS的共识机制与区块生成</a></p>
+<p>\29. <a href="http://c.biancheng.net/view/1960.html" target="_blank" rel="noopener">丹尼尔·拉瑞莫(BM)：EOS的主要开发者</a></p>
+<p>\30. <a href="http://c.biancheng.net/view/1961.html" target="_blank" rel="noopener">一张图理解EOS是什么</a></p>
+<p>\31. <a href="http://c.biancheng.net/view/1963.html" target="_blank" rel="noopener">区块链“不可能三角”</a></p>
+<p>\32. <a href="http://c.biancheng.net/view/1964.html" target="_blank" rel="noopener">区块链应用（去中心化应用）是什么样的?</a></p>
+<p>\33. <a href="http://c.biancheng.net/view/1966.html" target="_blank" rel="noopener">EOS密钥被盗后如何恢复？</a></p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE/">
+        <span>区块链</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2020/08/09/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#区块链入门详细教程"><span class="toc-number">1.</span> <span class="toc-text">区块链入门详细教程</span></a></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2020 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        John Doe
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+<script src="/js/mdui.min.js"></script>
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
